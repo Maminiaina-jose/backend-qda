@@ -1,0 +1,10 @@
+# 1. Installer avec vos deux commandes
+pip install --timeout 1000 fastapi==0.115.6 uvicorn==0.34.0 pandas==2.2.3 numpy==1.26.4 scikit-learn==1.6.1 python-multipart==0.0.18 pydantic==2.10.4
+
+pip install --timeout 1000 torch==2.5.1+cpu --index-url https://download.pytorch.org/whl/cpu
+
+# 2. Générer le requirements.txt (UNE FOIS L'INSTALLATION TERMINÉE)
+pip freeze > requirements.txt
+
+# 3. Vérifier que torch+cpu est bien dedans
+cat requirements.txt | grep torch
