@@ -6,3 +6,9 @@ models/sklearn/
 models/neural/
 .git/
 *.log
+venv
+__pycache__
+*.pyc
+.env
+.git
+.gitignore
